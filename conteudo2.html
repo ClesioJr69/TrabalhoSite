@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo OSI aplicado ao TCP/IP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .frame-container {
+            display: flex;
+        }
+
+        .menu-lateral {
+            width: 400px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .menu-lateral a:hover {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .menu-superior {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-superior a {
+            color: #FFFFFF;
+        }
+
+        .menu-superior a:hover {
+            color: aqua;
+        }
+
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .content a:hover {
+            font-weight: bold;
+            color: #333;
+        }
+
+        ul {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame-container">
+        <div class="menu-lateral">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="conteudo1.html">Camadas do Modelo OSI</a></li>
+                <li><a href="conteudo2.html">Camadas do TCP/IP </a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Camadas do TCP/IP</h1>
+
+            <ul>
+                <li>Protocolo de Aplicação</li>
+                <p>
+                    A camada de Aplicação é a camada mais alta do TCP/IP e lida diretamente com os aplicativos e serviços de rede. Ela fornece uma interface entre os aplicativos e a rede, permitindo a troca de dados entre eles. Essa camada abrange uma variedade de protocolos e serviços que suportam diferentes aplicações de rede.
+                    Exemplos de protocolos e serviços na camada de Aplicação incluem:
+
+                    HTTP (Hypertext Transfer Protocol): Utilizado para a transferência de páginas da web e o acesso a sites.
+                    FTP (File Transfer Protocol): Usado para a transferência de arquivos entre computadores em uma rede.
+                    SMTP (Simple Mail Transfer Protocol): Responsável pelo envio de e-mails.
+                    DNS (Domain Name System): Fornece a tradução de nomes de domínio para endereços IP.
+                    DHCP (Dynamic Host Configuration Protocol): Responsável por atribuir endereços IP automaticamente aos dispositivos em uma rede.
+                    A camada de Aplicação abrange uma ampla gama de funcionalidades, permitindo a comunicação entre aplicativos em diferentes dispositivos por meio da rede.
+                </p>
+                <li>Protocolo de Transporte</li>
+                <p>
+                    A camada de Transporte é responsável pela entrega confiável e ordenada dos dados entre os dispositivos finais. Ela divide os dados recebidos da camada de Aplicação em segmentos e os reagrupa no destino.
+                    As principais funções da camada de Transporte incluem: <br><br>
+
+                    Segmentação: Divide os dados recebidos em segmentos menores para melhorar a eficiência da transmissão.
+                    Controle de Fluxo: Gerencia o fluxo de dados entre os dispositivos para evitar sobrecarga de tráfego.
+                    Controle de Erros: Realiza a detecção e correção de erros nos segmentos transmitidos.
+                    Estabelecimento e Encerramento de Conexões: Gerencia o estabelecimento, manutenção e encerramento das conexões de comunicação.
+                    Dois protocolos comumente usados na camada de Transporte são o TCP (Transmission Control Protocol) e o UDP (User Datagram Protocol). O TCP oferece uma entrega confiável de dados, enquanto o UDP é usado para comunicações não confiáveis, como streaming de mídia e jogos online.<br><br>
+
+                </p>
+                <li>Camada de Rede</li>
+                <p>
+                    Camada de Rede:
+                    A camada de Rede é responsável pelo roteamento dos pacotes de dados pela rede. Ela determina os melhores caminhos para a transmissão dos dados, levando em consideração a topologia da rede, os endereços lógicos e o controle de congestionamento.
+                    As funções principais da camada de Rede incluem:<br><br>
+
+                    Endereçamento Lógico: Atribui endereços IP únicos aos dispositivos na rede para identificação e roteamento.
+                    Roteamento: Determina o melhor caminho para a transmissão dos pacotes de acordo com as informações de roteamento e a tabela de roteamento.
+                    Fragmentação e Remontagem: Divide pacotes maiores em fragmentos menores para transmissão eficiente e os reagrupa no destino.
+                    Controle de Congestionamento: Gerencia o fluxo de tráfego e evita congestionamentos na rede.
+                    O protocolo principal da camada de Rede é o IP (Internet Protocol), que é responsável pelo endereçamento e roteamento dos pacotes de dados.<br><br>
+                </p>
+                <li>Enlace de Dados</li>
+                <p>
+                    A camada de Enlace de Dados lida com a transmissão de dados confiável entre dispositivos adjacentes na rede. Ela fornece uma comunicação sem erros através de um meio físico potencialmente instável.
+                    As principais funções da camada de Enlace de Dados incluem:<br><br>
+
+                    Enquadramento: Divide os dados recebidos em quadros para a transmissão eficiente.
+                    Controle de Acesso ao Meio: Gerencia o acesso ao meio físico compartilhado entre dispositivos para evitar colisões.
+                    Detecção e Correção de Erros: Realiza a detecção de erros nos quadros transmitidos e, se possível, corrige-os.
+                    Controle de Fluxo: Regula o fluxo de dados entre dispositivos para evitar sobrecarga.
+                    Exemplos de protocolos da camada de Enlace de Dados são o Ethernet, Wi-Fi (IEEE 802.11) e o protocolo PPP (Point-to-Point Protocol), usado em conexões de rede discada.<br><br>
+
+                    Essas camadas trabalham em conjunto no TCP/IP para fornecer uma comunicação eficiente e confiável em redes de computadores. Cada uma delas possui funções e responsabilidades específicas, garantindo que os dados sejam transmitidos de forma adequada entre os dispositivos de rede.
+                </p>
+            </ul>
+
+            <p>Um exemplo de TCP/IP: <a href="https://pt.wikipedia.org/wiki/TCP/IP">CLIQUE AQUI</a></p>
+        </div>
+    </div>
+
+    <div class="menu-superior">
+        <a href="index.html">Home</a> |
+        <a href="contato.html">Contato</a>
+    </div>
+</body>
+
+</html>

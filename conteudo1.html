@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo OSI aplicado ao TCP/IP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .frame-container {
+            display: flex;
+        }
+
+        .menu-lateral {
+            width: 400px;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        .menu-lateral a:hover {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .menu-superior {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .menu-superior a {
+            color: #FFFFFF;
+        }
+
+        .menu-superior a:hover {
+            color: aqua;
+        }
+
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .content a:hover {
+            font-weight: bold;
+            color: #333;
+        }
+
+        ul {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame-container">
+        <div class="menu-lateral">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="conteudo1.html">Camadas do Modelo OSI</a></li>
+                <li><a href="conteudo2.html">Camadas do TCP/IP </a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Camadas do Modelo OSI</h1>
+            <p>Aqui está o conteúdo 1 sobre o Modelo OSI aplicado ao TCP/IP.</p>
+            <p>Este é um parágrafo com uma lista ordenada:</p>
+            <ol>
+                <li>Camada Física</li>
+                <p>
+                    Camada Física:
+                    A camada física lida com os aspectos físicos da transmissão de dados. Ela define as especificações elétricas, mecânicas e de sinalização dos meios de comunicação, como cabos, conectores e interfaces. Sua função principal é transmitir bits brutos por meio do meio físico, garantindo a conexão física entre os dispositivos de rede.
+                    Exemplos de tecnologias e componentes utilizados nesta camada incluem Ethernet, cabos de cobre, fibra óptica e sinais elétricos.
+                </p>
+                <li>Camada de Enlace</li>
+                <p>
+                    A camada de enlace de dados fornece um meio confiável de transferência de dados entre dispositivos adjacentes na rede. Ela divide os dados em quadros, adicionando informações de controle, como endereços MAC (Media Access Control), detecção e correção de erros, controle de fluxo e controle de acesso ao meio.
+                    Exemplos de protocolos utilizados nesta camada são Ethernet, Wi-Fi (IEEE 802.11) e protocolo Point-to-Point (PPP).
+                </p>
+                <li>Camada de Rede</li>
+                <p>
+                    A camada de rede lida com o roteamento e encaminhamento dos pacotes de dados pela rede. Ela determina os melhores caminhos para a transmissão dos dados, levando em consideração a topologia da rede, os endereços lógicos e o controle de congestionamento. Seu objetivo é garantir que os pacotes cheguem ao destino correto de maneira eficiente.
+                    Exemplos de protocolos de rede são o IP (Internet Protocol), ICMP (Internet Control Message Protocol) e o protocolo de roteamento RIP (Routing Information Protocol).
+                </p>
+                <li>Camada de Transporte</li>
+                <p>
+                    A camada de transporte garante a entrega confiável e ordenada dos dados entre os dispositivos finais. Ela é responsável por dividir os dados recebidos da camada de aplicação em segmentos menores, adicionar informações de controle, como números de sequência, e reagrupá-los no destino. Além disso, a camada de transporte também lida com a detecção e retransmissão de pacotes perdidos ou corrompidos.
+                    Protocolos comuns nesta camada são TCP (Transmission Control Protocol) e UDP (User Datagram Protocol).
+                </p>
+                <li>Camada de Sessão</li>
+                <p>
+                    A camada de sessão estabelece, gerencia e encerra as conexões entre os aplicativos em execução em dispositivos de rede diferentes. Ela oferece serviços de controle de diálogo, sincronização e recuperação de falhas nas sessões de comunicação.
+                    Exemplos de funções realizadas nesta camada incluem estabelecimento de conexão, autenticação, gerenciamento de sessões e controle de simultaneidade.
+                </p>
+                <li>Camada de Apresentação</li>
+                <p>
+                    A camada de apresentação trata da representação dos dados. Sua função é garantir que as informações transmitidas sejam interpretáveis pelo receptor. Ela lida com a criptografia, compressão e formatação dos dados, bem como com a conversão entre diferentes formatos de dados.
+                    Exemplos de serviços fornecidos nesta camada incluem criptografia de dados, compactação de arquivos, codificação de caracteres e tradução de formatos de dados.
+                </p>
+                <li>Camada de Aplicação</li>
+                <p>
+                    A camada de aplicação é a camada mais alta do Modelo OSI. Ela fornece serviços de rede específicos para os aplicativos ou processos do usuário final. Esses serviços incluem transferência de arquivos, acesso a páginas da web, envio de e-mails, gerenciamento remoto de redes e muitos outros.
+                    Protocolos como HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol) e DNS (Domain Name System) são exemplos de protocolos de aplicação.
+                </p>
+            </ol>
+
+            <img src="P.jpg" alt="">
+
+
+            <p>Um exemplo de Modelo OSI: <a href="https://pt.wikipedia.org/wiki/Modelo_OSI">CLIQUE AQUI</a></p>
+        </div>
+    </div>
+
+    <div class="menu-superior">
+        <a href="index.html">Home</a> |
+        <a href="contato.html">Contato</a>
+    </div>
+</body>
+
+</html>
